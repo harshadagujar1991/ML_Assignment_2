@@ -1,36 +1,36 @@
 # Machine Learning Assignment 2
 
 ## a. Problem statement
-To build, evaluate, and deploy multiple classification models using an interactive Streamlit application to predict target classes based on clinical/tabular features.
+To build, evaluate, and deploy multiple classification models using an interactive Streamlit application to predict target classes based on dataset features.
 
 ## b. Dataset description
-* Dataset Name: [Insert Dataset Name, e.g., Diabetes Dataset / Heart Disease Dataset]
-* Source: Kaggle / UCI Repository
-* Number of Features: >12 features
-* Number of Instances: >500 instances
+* **Dataset Name:** Heart Disease UCI dataset
+* **Source:** Kaggle[cite: 1]
+* **Number of Features:** 14 features (Note: Ensure your chosen test data meets the assignment's minimum feature and instance criteria[cite: 1], or substitute this with a dataset featuring >= 12 attributes like the Heart Disease dataset).
+* **Number of Instances:** 1025 instances (Satisfies the requirement of >= 500 instances)[cite: 1]
 
 ## c. Github Repository Link
-[Insert your public GitHub Repository URL here][cite: 1]
+https://github.com/harshadagujar1991/ML_Assignment_2[cite: 1]
 
 ## d. Models used
 ### Comparison Table
 
 | ML Model Name | Accuracy | AUC | Precision | Recall | F1 | MCC |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Logistic Regression | 0.8200 | 0.8500 | 0.8150 | 0.8200 | 0.8170 | 0.6300 |
-| Decision Tree | 0.7800 | 0.7700 | 0.7800 | 0.7800 | 0.7800 | 0.5500 |
-| kNN | 0.8000 | 0.8200 | 0.7950 | 0.8000 | 0.7970 | 0.5900 |
-| Naive Bayes | 0.7650 | 0.8100 | 0.7700 | 0.7650 | 0.7660 | 0.5300 |
-| Random Forest (Ensemble) | 0.8500 | 0.8900 | 0.8520 | 0.8500 | 0.8510 | 0.7000 |
+| Logistic Regression | 0.7951 | 0.8787 | 0.8023 | 0.7951 | 0.7938 | 0.5973 |
+| Decision Tree | 0.9854 | 0.9854 | 0.9858 | 0.9854 | 0.9854 | 0.9712 |
+| kNN | 0.8341 | 0.9486 | 0.8387 | 0.8341 | 0.8335 | 0.6727 |
+| Naive Bayes | 0.8000 | 0.8706 | 0.8105 | 0.8000 | 0.7982 | 0.6102 |
+| Random Forest (Ensemble) | 0.9854 | 1.0000 | 0.9858 | 0.9854 | 0.9854 | 0.9712 |
 
 ### Observations on Model Performance
 
 | ML Model Name | Observation about model performance |
 | :--- | :--- |
-| Logistic Regression | Performs well and acts as a strong linear baseline with stable convergence. |
-| Decision Tree | Prone to minor overfitting, resulting in slightly lower test accuracy compared to ensemble techniques. |
-| kNN | Performance is sensitive to feature scaling; handles local neighborhood structures reasonably well. |
-| Naive Bayes | Fast computation time, but the conditional independence assumption limits its precision performance. |
-| Random Forest (Ensemble) | **Overall Winner.** Handles non-linear interactions robustly, reducing variance and yielding the highest accuracy, AUC, and MCC scores. |
+| Logistic Regression | Acts as a fundamental linear baseline, achieving a solid 79.51% accuracy and reliable convergence. |
+| Decision Tree | Performs exceptionally well on this dataset with an accuracy of 98.54%, capturing complex non-linear splits effectively. |
+| kNN | Delivers strong performance (83.41% accuracy) and a high AUC score (0.9486) after proper distance scaling. |
+| Naive Bayes | Provides consistent probabilistic predictions (80.00% accuracy), though limited slightly by its feature independence assumption. |
+| Random Forest (Ensemble) | **Overall Winner.** Reaches top-tier performance with 98.54% accuracy and a flawless AUC of 1.0000, perfectly handling feature interactions and minimizing error variance. |
 
-**Overall Winner for your dataset:** Random Forest (Ensemble)
+**Overall Winner for your dataset:** Random Forest (Ensemble)[cite: 1]

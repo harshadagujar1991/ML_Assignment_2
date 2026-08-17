@@ -5,12 +5,12 @@ To build, evaluate, and deploy multiple classification models using an interacti
 
 ## b. Dataset description
 * **Dataset Name:** Heart Disease UCI dataset
-* **Source:** Kaggle[cite: 1]
-* **Number of Features:** 14 features (Note: Ensure your chosen test data meets the assignment's minimum feature and instance criteria[cite: 1], or substitute this with a dataset featuring >= 12 attributes like the Heart Disease dataset).
-* **Number of Instances:** 1025 instances (Satisfies the requirement of >= 500 instances)[cite: 1]
-
+* **Source:** Kaggle
+* **Number of Features:** 14 features 
+* **Number of Instances:** 1025 instances
+  
 ## c. Github Repository Link
-https://github.com/harshadagujar1991/ML_Assignment_2[cite: 1]
+https://github.com/harshadagujar1991/ML_Assignment_2
 
 ## d. Models used
 ### Comparison Table
@@ -33,4 +33,4 @@ https://github.com/harshadagujar1991/ML_Assignment_2[cite: 1]
 | Naive Bayes | Provides consistent probabilistic predictions (80.00% accuracy), though limited slightly by its feature independence assumption. |
 | Random Forest (Ensemble) | **Overall Winner.** Reaches top-tier performance with 98.54% accuracy and a flawless AUC of 1.0000, perfectly handling feature interactions and minimizing error variance. |
 
-**Overall Winner for your dataset:** Random Forest (Ensemble)[cite: 1]
+**Overall Winner for your dataset:** Random Forest (Ensemble)
